@@ -8,9 +8,10 @@
         $date = $_POST['date'];
         $dest = $_POST['dest'];
         $password = $_POST['password'];
+        $paid = 0;
      	
-        $query = mysqli_query($conn,"insert into pass(name, email, contact, date, dest, password) values ('$name', '$email', '$contact', '$date', '$dest', '$password')");
-		$lid = mysqli_insert_id();
+        $query = mysqli_query($conn,"insert into pass(name, email, contact, date, dest,paid, password) values ('$name', '$email', '$contact', '$date', '$dest', $paid, '$password')");
+		$lid = mysqli_insert_id($conn);
 		
 		$nod = round((strtotime($date) - time())/(60*60*24))+1;
 		$result = mysqli_query($conn,"select price from destination where name = '$dest'");
