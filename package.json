@@ -1,0 +1,19 @@
+{
+  "name": "cloud-based-bus-pass-system-master",
+  "version": "1.0.0",
+  "description": "Mini Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guraansh/Bus-Pass-System.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guraansh/Bus-Pass-System/issues"
+  },
+  "homepage": "https://github.com/guraansh/Bus-Pass-System#readme"
+}
